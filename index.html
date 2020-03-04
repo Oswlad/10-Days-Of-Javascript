@@ -42,8 +42,10 @@
 
       /* border: 1px solid orange; */
     }
-
     .timebtn li {
+      display: inline-block;
+    }
+    .timebtn li a {
       display: inline-block;
       width: 42px;
       height: 42px;
@@ -56,24 +58,13 @@
       background-color: #ddd;
       font-size: 18px;
       font-weight: 800;
-    }
-    .timebtn a {
       color: #303e49;
     }
-
-    .timebtn li:after {
-      content: '';
-      width: 30px;
-      height: 5px;
-      background-color: #ccc;
-      position: absolute;
-      top: 20px;
-      left: 48px;
+    .timebtn a:hover {
+      background-color: #666;
+      color: #fff;
     }
 
-    .timebtn li:last-child::after {
-      display: none;
-    }
     .dayblock {
       margin: 0 auto;
     }
@@ -93,17 +84,17 @@
     <div class="wrap">
       <div class="timeline">
         <ul class="timebtn">
-          <li class="yellow"><a href="/day00">0</a></li>
+          <li><a href="/day00">0</a></li>
           <li><a href="/day01">1</a></li>
           <li><a href="/day02">2</a></li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li>10</li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <li><a href="">5</a></li>
+          <li><a href="">6</a></li>
+          <li><a href="">7</a></li>
+          <li><a href="">8</a></li>
+          <li><a href="">9</a></li>
+          <li><a href="">10</a></li>
         </ul>
       </div>
       <ul class="dayblock">
