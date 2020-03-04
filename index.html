@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>10 days of Javascript</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans', sans-serif;
+      text-decoration: none;
+    }
+    body {
+      background-color: #eee;
+    }
+
+    .yellow {
+      background-color: #fecf6a;
+    }
+
+    .top {
+      background-color: #303e49;
+      padding: 100px 0;
+      text-align: center;
+      font-size: 36px;
+      color: #fff;
+    }
+    .wrap {
+      width: 960px;
+      padding: 100px;
+      padding-top: 50px;
+      margin: 0 auto;
+
+      /* border: 1px solid orange; */
+    }
+
+    .timebtn li {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      border: 5px solid #fff;
+      border-radius: 50%;
+      text-align: center;
+      margin: 0 15px;
+      line-height: 42px;
+      position: relative;
+      background-color: #ddd;
+      font-size: 18px;
+      font-weight: 800;
+    }
+    .timebtn a {
+      color: #303e49;
+    }
+
+    .timebtn li:after {
+      content: '';
+      width: 30px;
+      height: 5px;
+      background-color: #ccc;
+      position: absolute;
+      top: 20px;
+      left: 48px;
+    }
+
+    .timebtn li:last-child::after {
+      display: none;
+    }
+    .dayblock {
+      margin: 0 auto;
+    }
+    .dayblock li {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 180px;
+      height: 180px;
+      text-align: center;
+      margin: 5px;
+      line-height: 180px;
+    }
+  </style>
+  <body>
+    <div class="top">10 Days of Javascript</div>
+    <div class="wrap">
+      <div class="timeline">
+        <ul class="timebtn">
+          <li class="yellow"><a href="/day00">0</a></li>
+          <li><a href="/day01">1</a></li>
+          <li><a href="/day02">2</a></li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+        </ul>
+      </div>
+      <ul class="dayblock">
+        <li>Day00</li>
+        <li>Day01</li>
+        <li>Day02</li>
+        <li>Day03</li>
+        <li>Day04</li>
+        <li>Day05</li>
+        <li>Day06</li>
+        <li>Day07</li>
+        <li>Day08</li>
+        <li>Day09</li>
+        <li>Day10</li>
+      </ul>
+    </div>
+  </body>
+</html>
