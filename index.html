@@ -39,19 +39,27 @@
       color: #fff;
     }
 
-    .top a {
+    .top .title {
       padding: 35px 60px;
       color: #fff;
       background-color: rgba(202, 202, 202, 0.5);
     }
 
-    .top div {
+    .top .title_sec {
       /* border: 1px solid orange; */
-      position: absolute;
+      position: relative;
       top: 240px;
       left: 0;
       right: 0;
       font-size: 16px;
+    }
+
+    .top .nav > a {
+      color: #fff;
+      position: relative;
+      top: 100px;
+      font-size: 18px;
+      padding: 20px 10px;
     }
     .wrap {
       width: 960px;
@@ -108,12 +116,13 @@
   </style>
   <body>
     <div class="top">
-      <a href="">memo by Oswald</a>
-      <div>金魚腦...隨手筆記</div>
-      <!-- <div class="nav">
+      <a href="" class="title">memo by Oswald</a>
+      <div class="title_sec">金魚腦...隨手筆記</div>
+      <div class="nav">
         <a href=""><i class="fa fa-user" aria-hidden="true">about</i></a>
+        <a href=""><i class="fa fa-user" aria-hidden="true">jQuery</i></a>
         <!-- <a href=""><i class="fa fa-user" aria-hidden="true">file</i></a> -->
-      </div> -->
+      </div>
     </div>
     <div class="wrap">
       <div class="timeline">

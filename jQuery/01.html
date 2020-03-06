@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans', sans-serif;
+      text-decoration: none;
+    }
+    body {
+      background-color: #eee;
+    }
+
+    .yellow {
+      background-color: #fecf6a;
+    }
+
+    .top {
+      background-color: #303e49;
+      padding: 160px 0;
+      text-align: center;
+      font-size: 26px;
+      color: #fff;
+    }
+
+    .top .title {
+      padding: 35px 60px;
+      color: #fff;
+      background-color: rgba(202, 202, 202, 0.5);
+    }
+
+    .top div {
+      /* border: 1px solid orange; */
+      position: absolute;
+      top: 240px;
+      left: 0;
+      right: 0;
+      font-size: 16px;
+    }
+    .wrap {
+      width: 960px;
+      padding: 100px;
+      margin: 0 auto;
+      position: relative;
+      /* border: 1px solid orange; */
+    }
+    .nav {
+      position: absolute;
+      top: 100px;
+    }
+
+    /*===============================*/
+    .box {
+      width: 500px;
+      border: solid 1px #aaa;
+      display: flex;
+      margin: 0 auto;
+    }
+    .item {
+      /*float:left;*/
+      display: flex;
+      width: 40px;
+      overflow: hidden;
+      transition: width 2s;
+    }
+    .tab {
+      height: 300px;
+      width: 40px;
+      text-align: center;
+      background-color: #ccc;
+      flex-shrink: 0;
+    }
+    .content {
+      width: calc(500px - 40px * 3);
+      background-color: #ffa;
+    }
+    .item.active {
+      flex-grow: 1;
+      width: calc(100% - 80px);
+    }
+    .item.active .tab {
+      background-color: #fa0;
+    }
+  </style>
+  <body>
+    <div class="top">
+      <a class="title" href="">memo by Oswald</a>
+      <div>金魚腦...隨手筆記</div>
+      <!--<div class="nav">
+            <a href=""><i class="fa fa-user" aria-hidden="true">about</i></a>
+        <a href=""><i class="fa fa-user" aria-hidden="true">file</i></a> -->
+    </div>
+    <div class="wrap">
+      <div class="box">
+        <div class="item active">
+          <div class="tab">tab</div>
+          <div class="content">content</div>
+        </div>
+        <div class="item">
+          <div class="tab">tab</div>
+          <div class="content">content</div>
+        </div>
+        <div class="item">
+          <div class="tab">tab</div>
+          <div class="content">content</div>
+        </div>
+      </div>
+      <h2>手風琴</h2>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      //   $('.item').click(function(){
+      //           $(this).addClass('active').siblings().removeClass('active');
+      //       })
+      $('.tab').click(function() {
+        $(this)
+          .parent()
+          .addClass('active')
+          .siblings()
+          .removeClass('active');
+      });
+    });
+  </script>
+</html>
